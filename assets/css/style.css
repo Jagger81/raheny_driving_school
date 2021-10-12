@@ -567,7 +567,7 @@ section {
 }
 .clients img {
   width: 50%;
-  filter: grayscale(100);
+  /* filter: grayscale(100); */
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
@@ -646,6 +646,23 @@ section {
   background: #e82d2d;
 }
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
+  color: #fff;
+}
+
+#services .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  border: 2px solid #cc1616;
+  color: #cc1616;
+}
+#services .btn-get-started:hover {
+  background: #cc1616;
   color: #fff;
 }
 
@@ -1144,6 +1161,11 @@ section {
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
 }
+#footer .footer-top .footer-info img {
+  align-items: center;
+  max-width: 65%;
+  height: auto;
+}
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -1255,7 +1277,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials-clean {
   color:#313437;
-  background-color:#eef4f7;
+  /* background-color:#eef4f7; */
 }
 
 .testimonials-clean p {
