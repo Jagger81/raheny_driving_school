@@ -948,6 +948,13 @@ section {
   color: #cc1616;
 }
 
+@media (max-width: 1024px) {
+  .pricing .featured {
+    margin-top: 18px;  /* added to ensure box is positioned correctly on smaller screens */
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1022,11 +1029,11 @@ section {
   font-size: 14px;
   margin-bottom: 0;
 }
-.contact .php-email-form {
+.contact .fc-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
 }
-.contact .php-email-form .error-message {
+.contact .fc-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1034,10 +1041,10 @@ section {
   padding: 15px;
   font-weight: 600;
 }
-.contact .php-email-form .error-message br + br {
+.contact .fc-email-form .error-message br + br {
   margin-top: 25px;
 }
-.contact .php-email-form .sent-message {
+.contact .fc-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1045,13 +1052,13 @@ section {
   padding: 15px;
   font-weight: 600;
 }
-.contact .php-email-form .loading {
+.contact .fc-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
-.contact .php-email-form .loading:before {
+.contact .fc-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1063,28 +1070,28 @@ section {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .fc-email-form input, .contact .fc-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
-.contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
+.contact .fc-email-form input::focus, .contact .fc-email-form textarea::focus {
   background-color: #cc1616;
 }
-.contact .php-email-form input {
+.contact .fc-email-form input {
   padding: 10px 15px;
 }
-.contact .php-email-form textarea {
+.contact .fc-email-form textarea {
   padding: 12px 15px;
 }
-.contact .php-email-form button[type=submit] {
+.contact .fc-email-form button[type=submit] {
   background: #cc1616;
   border: 0;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
 }
-.contact .php-email-form button[type=submit]:hover {
+.contact .fc-email-form button[type=submit]:hover {
   background: #e82d2d;
 }
 @-webkit-keyframes animate-loading {
@@ -1165,11 +1172,6 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-}
-#footer .footer-top .footer-info img {
-  align-items: center;
-  max-width: 65%;
-  height: auto;
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
@@ -1271,9 +1273,32 @@ section {
 #footer .credits a {
   color: #e82d2d;
 }
+#footer_phone {
+  color: #cc1616;
+  line-height: 0;
+}
+#footer_envelope {
+  color: #cc1616;
+  line-height: 0;
+  margin-right: 6px;
+}
 @media (max-width: 575px) {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
+  }
+}
+@media (max-width: 1024px) {
+  #footer .footer-top .footer-info img {
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 1025px) {
+  #footer .footer-top .footer-info img {
+    align-items: center;
+    width: 59%;
+    height: auto;
   }
 }
 
